@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Triangle</title>
+  </head>
+  <body>
+    <script>
+      var result = +prompt("Введите число больше нуля", "");
+      var messageSymbol = "*";
+      var message = "";
+      if (isNaN(result) || result == 0) {
+        alert("Вы ввели не верные данные");
+      } else {
+        for (var i = 1; i <= result; i++) {
+          message = message + messageSymbol.repeat(i) + "\n";
+        }
+        console.log(message);
+      }
+    </script>
+  </body>
+</html>
